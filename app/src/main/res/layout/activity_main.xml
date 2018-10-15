@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="-20dp"
+    android:layout_margin="-20dp"
+    tools:context="www.next2door.com.next2door.MainActivity"
+    android:id="@+id/myswipelayout"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="202dp" -->
+        <!--android:visibility="gone"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/background_light">
+
+        </WebView>
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="49dp"
+                android:layout_height="41dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="154dp"
+                android:indeterminateTint="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="124dp"
+                android:text="Wait while loading..."
+                tools:layout_editor_absoluteX="171dp"
+                tools:layout_editor_absoluteY="370dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="176dp"
+                app:srcCompat="@drawable/mainlogo" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
